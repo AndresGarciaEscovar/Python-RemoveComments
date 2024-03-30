@@ -1,4 +1,4 @@
-name: remove_comments_env
+name: env_remove_comments
 channels:
   - conda-forge
   - defaults
