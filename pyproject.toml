@@ -50,11 +50,4 @@ namespaces = false
 
 
 [tool.pylint]
-disable = [
-    "duplicate-code",
-    "no-name-in-module",
-    "too-many-arguments",
-    "too-many-lines",
-    "too-many-positional-arguments",
-    "unsubscriptable-object"
-]
+disable = []
