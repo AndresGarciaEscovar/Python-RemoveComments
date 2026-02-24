@@ -1,0 +1,53 @@
+# This is the installation script for the package removecomments. For more
+# information on how more parameters can be added, see:
+# https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html
+
+
+# ------------------------------- Build System ------------------------------- #
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+
+# ------------------------------ Project Details ----------------------------- #
+
+
+[project]
+name = "removecomments"
+authors = [
+    { name = "Andres Garcia Escovar", email = "andres.garcia-escovar@noaa.gov"},
+]
+description = "A small program to remove comments from proramming files."
+readme = "README.md"
+requires-python = ">=3.11.8"
+keywords = ["c", "comments", "c++", "programming", "remove",]
+license = {text="MIT"}
+dependencies = [ ]
+version = "0.0.1"
+
+
+# ----------------------------- Package Commands ----------------------------- #
+
+
+[project.scripts]
+removecomments = "removecomments.__main__:main"
+
+
+# ---------------------------- Packages to Include --------------------------- #
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+
+# -------------------------- Pylint Flags to Include ------------------------- #
+
+
+[tool.pylint]
+disable = []
