@@ -17,7 +17,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "removecomments"
 authors = [
-    { name = "Andres Garcia Escovar", email = "andres.garcia-escovar@noaa.gov"},
+    { name = "Andres Garcia Escovar", email = "andrumen1@yahoo.com"},
 ]
 description = "A small program to remove comments from proramming files."
 readme = "README.md"
